@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <dib id="hoge">id:hoge</dib>
+        <button onclick="setDomElementModule.setInnerText('hoge')">テキスト書換</button>
+        <div style="margin: 16px"></div>
+        <div id="parent">
+            <div id="child">#parentの子供</div>
+        </div>
+        <button onclick="setDomElementModule.setInnerHTML('parent')">HTML書換</button>
+        <div style="margin: 16px"></div>
+        <div>
+            <img src="https://drive.google.com/uc?export=view&id=1pIfz_Uogs78X8IEH2KV2Tur1NnS0DCNw" id="image" width="320" height="180">
+        </div>
+        <button onclick="setDomElementModule.replaceImageSrc('image')">画像書換</button>
+        <div style="margin: 16px"></div>
+        <p>list</p>
+        <button onclick="setDomElementModule.appendChildNode('list')">子要素追加</button>
+        <div id="list"></div>
+    </main>
+    <script type="text/javascript" src="./JavaScript/DOM2.js"></script>
+</body>
+</html>
